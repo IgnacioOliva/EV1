@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Up</title>
+    <link rel="icon" type="image/jpg" href="imagenes/images-removebg-preview.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Level Up - GAMER SHOP!!!!</h1>
-    <h2>Welcome to Level Up</h2>
-    <button>Get Started</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h1>Level Up - GAMER SHOP!!!!</h1>
+        <h2>Welcome to Level Up</h2>
+        <div id="product-list">
+           <!-- Los productos se cargarán aquí con JavaScript -->
+        </div>
+      </div><!-- .col-8-->
+
+      <div class="col-4"> 
+        <h2>🛒 Carrito</h2>
+        <div id="cart-list">
+          <!-- Los items del carrito se mostrarán aquí -->
+        </div>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+      </div> <!-- .col-4 -->
+    </div><!-- .row -->
+  </div> <!-- .container  -->
+  <script src="json/carrito.js"></script>
 </body>
 </html>
