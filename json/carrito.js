@@ -39,12 +39,6 @@ const productos = [
     const item = carrito.find(i => i.id === id);
   
     if (item) {
-      // Regla formativa: máximo 5 unidades por producto
-      // if (item.cantidad >= 5) {
-      //   alert("Máximo 5 unidades por producto");
-      //   return;
-      // }
-
       item.cantidad += 1;
     } else {
       carrito.push({ ...producto, cantidad: 1 });
@@ -103,8 +97,7 @@ const productos = [
         <p class="stext">Precio: $${item.precio} x ${item.cantidad} = $${item.precio * item.cantidad}<br></p>
         <button onclick="agregarAlCarrito(${item.id})">+</button>
         <button onclick="disminuirCantidad(${item.id})">-</button>
-        <button onclick="eliminarDelCarrito(${item.id})">Eliminar</button>
-      `;
+        <button onclick="eliminarDelCarrito(${item.id})">Eliminar</button>`;
       cartList.appendChild(div);
     });
   
