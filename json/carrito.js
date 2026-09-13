@@ -25,8 +25,8 @@ const productos = [
       div.className = 'product';
       div.innerHTML = `
         <p><img src="${producto.imagen}" alt="${producto.nombre}" width="100"></p>
-        <strong>${producto.nombre}</strong><br>
-        Precio: $${producto.precio}<br>
+        <strong class="ptext">${producto.nombre}</strong>
+        <p class="stext">Precio: $${producto.precio}</p>
         <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
       `;
       productList.appendChild(div);
@@ -40,10 +40,10 @@ const productos = [
   
     if (item) {
       // Regla formativa: máximo 5 unidades por producto
-      if (item.cantidad >= 5) {
-        alert("Máximo 5 unidades por producto");
-        return;
-      }
+      // if (item.cantidad >= 5) {
+      //   alert("Máximo 5 unidades por producto");
+      //   return;
+      // }
 
       item.cantidad += 1;
     } else {
@@ -91,7 +91,7 @@ const productos = [
     cartList.innerHTML = '';
   
     if (carrito.length === 0) {
-      cartList.innerHTML = '<p>El carrito está vacío.</p>';
+      cartList.innerHTML = '<p class="stext">El carrito está vacío.</p>';
       return;
     }
   
@@ -99,8 +99,8 @@ const productos = [
       const div = document.createElement('div');
       div.className = 'cart-item';
       div.innerHTML = `
-        <strong>${item.nombre}</strong><br>
-        Precio: $${item.precio} x ${item.cantidad} = $${item.precio * item.cantidad}<br>
+        <strong class="stext">${item.nombre}</strong>
+        <p class="stext">Precio: $${item.precio} x ${item.cantidad} = $${item.precio * item.cantidad}<br></p>
         <button onclick="agregarAlCarrito(${item.id})">+</button>
         <button onclick="disminuirCantidad(${item.id})">-</button>
         <button onclick="eliminarDelCarrito(${item.id})">Eliminar</button>
@@ -109,7 +109,7 @@ const productos = [
     });
   
     const total = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
-    cartList.innerHTML += `<h3>Total: $${total}</h3>`;
+    cartList.innerHTML += `<h3 class="ptext">Total: $${total}</h3>`;
   }
   
   // Inicializar
