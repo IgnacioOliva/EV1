@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Level Up Gamer Shop</title>
   <link rel="icon" type="image/png" href="imagenes/images-removebg-preview.png">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <header class="navbar">
     <div class="logo">
       <h1>LEVEL <span>UP</span> - GAMER SHOP</h1>
@@ -26,13 +26,41 @@
     </nav>
   </header>
 
-  <main style="flex: 1;">
-    <!-- Contenido vacío por ahora -->
+  <main style="flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
+    <div class="card" style="max-width: 500px; width: 100%;">
+      <h2>Contacto</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;">
+        ¿Tienes dudas con tu pedido o necesitas asesoría técnica? Escríbenos y te responderemos a la brevedad.
+      </p>
+
+      <form id="formContacto" onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente.');">
+        <div class="form-group">
+          <label for="nombreContacto">Nombre completo</label>
+          <input type="text" id="nombreContacto" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="correoContacto">Correo electrónico</label>
+          <input type="email" id="correoContacto" placeholder="tu@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Ej: Consulta sobre stock" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí..." required style="padding-bottom: 40px;">
+        </div>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2026 LEVEL UP Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>
