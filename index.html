@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level Up Gamer Shop</title>
-    <link rel="icon" type="image/png" href="imagenes/images-removebg-preview.png">
-    
-    <!-- Fuentes Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level Up Gamer Shop</title>
+  <link rel="icon" type="image/png" href="imagenes/images-removebg-preview.png">
+  
+  <!-- Fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>LEVEL UP <span>GAMER SHOP</span></h1>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header class="navbar">
-        <div class="logo">
-            <h1>LEVEL UP <span>GAMER SHOP</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="about.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main class="main-container">
+    <!-- Catálogo de productos -->
+    <section class="catalog">
+      <h2>Catálogo de Productos</h2>
+      <div id="product-list" class="grid-products">
+        <!-- Se cargan dinámicamente -->
+      </div>
+    </section>
 
-    <main class="main-container">
-        <!-- Catálogo de productos -->
-        <section class="catalog">
-            <h2>Catálogo de Productos</h2>
-            <div id="product-list" class="grid-products">
-                <!-- Se cargan dinámicamente con JS -->
-            </div>
-        </section>
+    <!-- Sidebar del Carrito -->
+    <aside class="cart-sidebar">
+      <h2>🛒 Carrito</h2>
+      <div id="cart-list" class="cart-items">
+        <!-- Se carga dinámicamente -->
+      </div>
+      <button class="btn-clear" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </aside>
+  </main>
 
-        <!-- Sidebar del Carrito -->
-        <aside class="cart-sidebar">
-            <h2>🛒 Carrito</h2>
-            <div id="cart-list" class="cart-items">
-                <!-- Se carga dinámicamente con JS -->
-            </div>
-            <button class="btn-clear" onclick="vaciarCarrito()">Vaciar Carrito</button>
-        </aside>
-    </main>
+  <footer>
+    <p>&copy; 2026 LEVEL UP Todos los derechos reservados</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2026 LEVEL UP - Todos los derechos reservados</p>
-    </footer>
-
-    <!-- Apunta correctamente al archivo script.js del nuevo PDF -->
-    <script src="json/script.js"></script>
+  <script src="json/script.js"></script>
 </body>
 </html>
