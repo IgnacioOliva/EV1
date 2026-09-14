@@ -25,7 +25,7 @@ const productos = [
       div.className = 'product';
       div.innerHTML = `
         <p><img src="${producto.imagen}" alt="${producto.nombre}" width="100"></p>
-        <strong class="ptext">${producto.nombre}</strong>
+        <strong class="stext">${producto.nombre}</strong>
         <p class="stext">Precio: $${producto.precio}</p>
         <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
       `;
