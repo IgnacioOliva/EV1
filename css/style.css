@@ -64,7 +64,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Layout Principal */
+/* Layout Principal Grid */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -82,7 +82,7 @@ body {
     }
 }
 
-/* Catálogo y Tarjetas */
+/* Catálogo y Tarjetas de Producto */
 h2 {
     font-family: 'Orbitron', sans-serif;
     color: var(--text-primary);
