@@ -109,3 +109,52 @@ const productos = [
   mostrarProductos();
   mostrarCarrito();
   
+function validar(){
+    const edadInput = (document.getElementById("edad").value);
+    if(!edadInput || Number(edadInput)< 18){
+      alert("ERROR: Debe ser mayor de 18 años");
+      return false
+    }
+  return true;
+}
+
+function descuento(precio){
+  const correo = (document.getElementById("correo").value);
+  if(correo.includes("@duocuc.cl")){
+    return precio * 0.80;
+  }
+  return precio;
+
+}
+
+function registro(){
+  const nombre = (document.getElementById("nombre").value);
+  const correo = (document.getElementById("correo").value)
+  const pass1 = (document.getElementById("contraseña").value);
+  const pass2 = (document.getElementById("contraseña2").value);
+
+ if (pass1 !== pass2 || !pass1) {
+    alert("ERROR: Las contraseñas no coinciden");
+    return;
+  }
+
+  console.log("Usuario registrado");
+  localStorage.setItem("nombre", JSON.stringify(nombre));
+  localStorage.setItem("correo", JSON.stringify(correo));
+  localStorage.setItem("contraseña", JSON.stringify(pass1));
+}
+
+function login(){
+  const correo = document.getElementById("correo").value;
+  const pass1 = document.getElementById("contraseña").value;
+
+  const correoGuardado = JSON.parse(localStorage.getItem("correo"));
+  const passGuardada = JSON.parse(localStorage.getItem("constraseña"));
+
+  if(correo == correoGuardado && pass1 === passGuardada){
+    console.log("Login exitoso");
+  } else {
+    alert("Credenciales incorrectas");
+  }
+
+}
