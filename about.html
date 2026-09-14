@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acerca de Nosotros - Level Up Chile</title>
-  <link rel="stylesheet" href="css/nosotros.css">
-
+  <title>Sobre Nosotros - Level Up Gamer Shop</title>
+  <link rel="icon" type="image/png" href="imagenes/images-removebg-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <header>
-    <div class="logo">Level <span>Up</span></div>
+  <header class="navbar">
+    <div class="logo">
+      <h1>LEVEL <span>UP</span> - GAMER SHOP</h1>
+    </div>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="nosotros.html" style="color: var(--primary);">Nosotros</a>
-      <a href="login.html">Cuenta</a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html" class="active">Sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <span class="chile-badge">🇨🇱 Gamer Tech Chile</span>
+    <span class="chile-badge">LEVEL UP</span>
     <h1>Eleva tu experiencia de <span>Juego</span></h1>
     <p>El mejor hardware, periféricos y accesorios para los jugadores más exigentes.</p>
   </section>
@@ -28,32 +34,29 @@
   <main class="container">
     <section class="about-section">
       <h2>¿Quiénes Somos?</h2>
-      <p style="color: var(--text-muted); font-size: 1.1rem;">
-        En <strong>Level Up</strong> somos apasionados por el gaming y la tecnología. Nacimos en Chile con el propósito de acercar lo último en periféricos, consolas, componentes de PC y accesorios a la comunidad gamer nacional. Sabemos lo que significa cada milisegundo de respuesta y cada FPS, por lo que nos dedicamos a ofrecer solo productos de alto rendimiento garantizados.
+      <p style="color: var(--text-secondary); font-size: 1.1rem;">
+        En <strong>Level Up</strong> somos apasionados por el gaming y la tecnología. Nacimos en Chile con el propósito de acercar lo último en periféricos, consolas, componentes de PC y accesorios a la comunidad gamer nacional.
       </p>
     </section>
 
     <section class="grid">
-      <div class="card">
-        <h3>🎮 Nuestra Misión</h3>
-        <p style="color: var(--text-muted);">Equipar a la comunidad chilena de videojuegos con tecnología de vanguardia, precios competitivos y un servicio especializado hecho por gamers para gamers.</p>
+      <div class="about-card">
+        <h3>Nuestra Misión</h3>
+        <p style="color: var(--text-secondary);">Equipar a la comunidad chilena de videojuegos con tecnología de vanguardia, precios competitivos y servicio especializado.</p>
       </div>
-
-      <div class="card">
-        <h3>🚀 Nuestra Visión</h3>
-        <p style="color: var(--text-muted);">Convertirnos en la tienda de tecnología y gaming referente en Chile, impulsando el crecimiento de la escena de los eSports y la cultura gamer en la región.</p>
+      <div class="about-card">
+        <h3>Nuestra Visión</h3>
+        <p style="color: var(--text-secondary);">Convertirnos en la tienda referente en Chile, impulsando el crecimiento de la escena eSports.</p>
       </div>
-
-      <div class="card">
-        <h3>⚡ Garantía Level Up</h3>
-        <p style="color: var(--text-muted);">Ofrecemos envíos rápidos a todo Chile, productos 100% originales y soporte técnico personalizado para ayudarte a armar tu setup ideal.</p>
+      <div class="about-card">
+        <h3>Garantía Level Up</h3>
+        <p style="color: var(--text-secondary);">Envíos rápidos a todo Chile, productos 100% originales y soporte técnico personalizado.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Level Up Chile — Todos los derechos reservados.</p>
+    <p>&copy; 2026 LEVEL UP Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>

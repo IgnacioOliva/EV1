@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Level Up - Gamer Shop</title>
-  <link rel="stylesheet" href="css/login.css">
+  <title>Login - Level Up Gamer Shop</title>
+  <link rel="icon" type="image/png" href="imagenes/images-removebg-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <header>
-    <div class="logo">Level Up - <span>GAMER SHOP</span></div>
+  <header class="navbar">
+    <div class="logo">
+      <h1>LEVEL <span>UP</span> - GAMER SHOP</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -21,10 +26,15 @@
   </header>
 
   <main class="forms-wrapper">
-    
     <!-- REGISTRO DE USUARIO -->
     <div class="card">
       <h2>Registro</h2>
+      
+      <!-- Mensaje informativo de descuento -->
+      <p style="color: var(--primary); font-size: 0.85rem; font-weight: bold; margin-bottom: 15px;">
+        Todas las cuentas @duocuc.cl reciben un descuento permanente en todas sus compras.
+      </p>
+
       <form id="formRegistro">
         <div class="form-group">
           <label for="nombre">Nombre</label>
@@ -37,18 +47,18 @@
         </div>
 
         <div class="form-group">
-          <label for="correo">Correo (agrega @duocuc.cl para descuento)</label>
+          <label for="correo">Correo</label>
           <input type="email" id="correo" placeholder="correo@duocuc.cl" required>
         </div>
 
         <div class="form-group">
           <label for="contraseña">Contraseña</label>
-          <input type="password" id="contraseña" placeholder="••••••••" required>
+          <input type="password" id="contraseña" placeholder="********" required>
         </div>
 
         <div class="form-group">
           <label for="contraseña2">Confirmar Contraseña</label>
-          <input type="password" id="contraseña2" placeholder="••••••••" required>
+          <input type="password" id="contraseña2" placeholder="********" required>
         </div>
 
         <button type="submit" class="btn">Registrarse</button>
@@ -66,20 +76,18 @@
 
         <div class="form-group">
           <label for="loginContraseña">Contraseña</label>
-          <input type="password" id="loginContraseña" placeholder="••••••••" required>
+          <input type="password" id="loginContraseña" placeholder="********" required>
         </div>
 
         <button type="submit" class="btn btn-secondary">Ingresar</button>
       </form>
     </div>
-
   </main>
 
   <footer>
-    <p>&copy; 2026 LEVEL UP - Todos los derechos reservados</p>
+    <p>&copy; 2026 LEVEL UP Todos los derechos reservados</p>
   </footer>
 
-  <!-- Vinculación con tu archivo JS -->
   <script src="json/login.js"></script>
 </body>
 </html>
