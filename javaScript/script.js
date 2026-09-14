@@ -57,6 +57,7 @@ function disminuirCantidad(id) {
         }
         guardarCarrito();
         mostrarCarrito();
+
     }
 }
 

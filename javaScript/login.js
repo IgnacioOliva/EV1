@@ -60,6 +60,7 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
     const nombreGuardado = JSON.parse(localStorage.getItem("usuario_nombre"));
     alert("¡Login exitoso! Bienvenido/a, " + nombreGuardado);
     console.log("Inicio de sesión exitoso");
+     this.reset();
   } else {
     alert("ERROR: Correo o contraseña incorrectos.");
   }
